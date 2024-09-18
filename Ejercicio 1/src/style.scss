@@ -1,3 +1,13 @@
+$container-colors:
+    //Color container-1
+    rgb(0, 0, 255),
+    
+    //Color container-2
+    rgb(255, 0, 0),
+
+    //Color container-3
+    rgb(0, 255, 0);
+
 * {
     margin: 0;
     padding: 0;
@@ -22,98 +32,40 @@
     padding: 25px;
 }
 
-.container-1{
-    $container-color: rgb(0, 0, 255);
+$i: 1;
 
-    .darken-4{
-        background-color: darken($color: $container-color, $amount: 40%);
-    }
-    .darken-3{
-        background-color: darken($color: $container-color, $amount: 30%);
-    }
-    .darken-2{
-        background-color: darken($color: $container-color, $amount: 20%);
-    }
-    .darken-1{
-        background-color: darken($color: $container-color, $amount: 10%);
-    }
-    .base-color{
-        background-color: $container-color;
-    }
-    .lighten-1{
-        background-color: lighten($color: $container-color, $amount: 10%);
-    }
-    .lighten-2{
-        background-color: lighten($color: $container-color, $amount: 20%);
-    }
-    .lighten-3{
-        background-color: lighten($color: $container-color, $amount: 30%);
-    }
-    .lighten-4{
-        background-color: lighten($color: $container-color, $amount: 40%);
-    }
-}
+@while $i <= length($container-colors) {
+  $container-color: nth($container-colors, $i);
 
-.container-2{
-    $container-color: rgb(0, 255, 255);
+  .container-#{$i} {
+    .darken-4 {
+      background-color: darken($container-color, 40%);
+    }
+    .darken-3 {
+      background-color: darken($container-color, 30%);
+    }
+    .darken-2 {
+      background-color: darken($container-color, 20%);
+    }
+    .darken-1 {
+      background-color: darken($container-color, 10%);
+    }
+    .base-color {
+      background-color: $container-color;
+    }
+    .lighten-1 {
+      background-color: lighten($container-color, 10%);
+    }
+    .lighten-2 {
+      background-color: lighten($container-color, 20%);
+    }
+    .lighten-3 {
+      background-color: lighten($container-color, 30%);
+    }
+    .lighten-4 {
+      background-color: lighten($container-color, 40%);
+    }
+  }
 
-    .darken-4{
-        background-color: darken($color: $container-color, $amount: 40%);
-    }
-    .darken-3{
-        background-color: darken($color: $container-color, $amount: 30%);
-    }
-    .darken-2{
-        background-color: darken($color: $container-color, $amount: 20%);
-    }
-    .darken-1{
-        background-color: darken($color: $container-color, $amount: 10%);
-    }
-    .base-color{
-        background-color: $container-color;
-    }
-    .lighten-1{
-        background-color: lighten($color: $container-color, $amount: 10%);
-    }
-    .lighten-2{
-        background-color: lighten($color: $container-color, $amount: 20%);
-    }
-    .lighten-3{
-        background-color: lighten($color: $container-color, $amount: 30%);
-    }
-    .lighten-4{
-        background-color: lighten($color: $container-color, $amount: 40%);
-    }
-}
-
-.container-3{
-    $container-color: rgb(255, 255, 0);
-
-    .darken-4{
-        background-color: darken($color: $container-color, $amount: 40%);
-    }
-    .darken-3{
-        background-color: darken($color: $container-color, $amount: 30%);
-    }
-    .darken-2{
-        background-color: darken($color: $container-color, $amount: 20%);
-    }
-    .darken-1{
-        background-color: darken($color: $container-color, $amount: 10%);
-    }
-    .base-color{
-        background-color: $container-color;
-    }
-    .lighten-1{
-        background-color: lighten($color: $container-color, $amount: 10%);
-    }
-    .lighten-2{
-        background-color: lighten($color: $container-color, $amount: 20%);
-    }
-    .lighten-3{
-        background-color: lighten($color: $container-color, $amount: 30%);
-    }
-    .lighten-4{
-        background-color: lighten($color: $container-color, $amount: 40%);
-    }
+  $i: $i + 1;
 }
