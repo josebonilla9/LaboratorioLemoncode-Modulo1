@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 350px;
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 250px 80px 200px 40px 80px;
+    grid-template-areas: 
+    "imagen"
+    "titulo"
+    "texto"
+    "fecha"
+    "boton";
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.item {
+    overflow: hidden;
+    margin: 10px
+}
+
+.img {
+    display: flex;
+    grid-area: imagen;
+    margin: 0px;
+}
+
+.titulo {
+    display: flex;
+    grid-area: titulo;
+    font-size: 25px;
+    align-items: center;
+}
+
+.texto {
+    grid-area: texto;
+    line-height: 1.75;
+}
+
+.fecha {
+    grid-area: fecha;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.color-verde {
+    color: rgb(34, 183, 34);
+}
+
+.mas-informacion {
+    color: white;
+    grid-area: boton;
+    background-color: rgb(34, 183, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}

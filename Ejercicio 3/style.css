@@ -1,0 +1,42 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1 {
+    padding: 25px;
+}
+
+.container {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.item {
+    color: white;
+    padding: 15px;
+    flex-grow: 1;
+    text-align: center;
+    background-color: rgb(36, 168, 168);
+}
+
+.item:hover {
+    background-color: rgb(29, 99, 99);
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+        height: 200px;
+        align-items: stretch;
+    }
+    
+    .items {
+        width: 100%; 
+        padding: 25px;
+    }
+}

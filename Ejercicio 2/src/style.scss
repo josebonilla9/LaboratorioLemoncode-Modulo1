@@ -1,0 +1,52 @@
+//@use "base" as *;
+@use "base2" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 5px;
+    grid-template-columns: 100px;
+    grid-template-rows: repeat(6, 80px);
+}
+
+.item {
+    gap: 15px;
+    height: 80px;
+    width: 100px;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.base {
+    background-color: $color-base;
+}
+
+.important {
+    background-color: $color-important;
+}
+
+.warning {
+    background-color: $color-warning;
+}
+
+.principal-font {
+    font-family: $fuente-princial;
+}
+
+.secondary-font {
+    font-family: $fuente-secundaria;
+}
+
+.box-shadow {
+    border: 1px black solid;
+    box-shadow: $shadow;
+}

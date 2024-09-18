@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-containers {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container {
+    display: flex;
+    gap: 15px;
+}
+
+.box {
+    color: rgb(255, 255, 255);
+    padding: 25px;
+}
+
+.container-1{
+    $container-color: rgb(0, 0, 255);
+
+    .darken-4{
+        background-color: darken($color: $container-color, $amount: 40%);
+    }
+    .darken-3{
+        background-color: darken($color: $container-color, $amount: 30%);
+    }
+    .darken-2{
+        background-color: darken($color: $container-color, $amount: 20%);
+    }
+    .darken-1{
+        background-color: darken($color: $container-color, $amount: 10%);
+    }
+    .base-color{
+        background-color: $container-color;
+    }
+    .lighten-1{
+        background-color: lighten($color: $container-color, $amount: 10%);
+    }
+    .lighten-2{
+        background-color: lighten($color: $container-color, $amount: 20%);
+    }
+    .lighten-3{
+        background-color: lighten($color: $container-color, $amount: 30%);
+    }
+    .lighten-4{
+        background-color: lighten($color: $container-color, $amount: 40%);
+    }
+}
+
+.container-2{
+    $container-color: rgb(0, 255, 255);
+
+    .darken-4{
+        background-color: darken($color: $container-color, $amount: 40%);
+    }
+    .darken-3{
+        background-color: darken($color: $container-color, $amount: 30%);
+    }
+    .darken-2{
+        background-color: darken($color: $container-color, $amount: 20%);
+    }
+    .darken-1{
+        background-color: darken($color: $container-color, $amount: 10%);
+    }
+    .base-color{
+        background-color: $container-color;
+    }
+    .lighten-1{
+        background-color: lighten($color: $container-color, $amount: 10%);
+    }
+    .lighten-2{
+        background-color: lighten($color: $container-color, $amount: 20%);
+    }
+    .lighten-3{
+        background-color: lighten($color: $container-color, $amount: 30%);
+    }
+    .lighten-4{
+        background-color: lighten($color: $container-color, $amount: 40%);
+    }
+}
+
+.container-3{
+    $container-color: rgb(255, 255, 0);
+
+    .darken-4{
+        background-color: darken($color: $container-color, $amount: 40%);
+    }
+    .darken-3{
+        background-color: darken($color: $container-color, $amount: 30%);
+    }
+    .darken-2{
+        background-color: darken($color: $container-color, $amount: 20%);
+    }
+    .darken-1{
+        background-color: darken($color: $container-color, $amount: 10%);
+    }
+    .base-color{
+        background-color: $container-color;
+    }
+    .lighten-1{
+        background-color: lighten($color: $container-color, $amount: 10%);
+    }
+    .lighten-2{
+        background-color: lighten($color: $container-color, $amount: 20%);
+    }
+    .lighten-3{
+        background-color: lighten($color: $container-color, $amount: 30%);
+    }
+    .lighten-4{
+        background-color: lighten($color: $container-color, $amount: 40%);
+    }
+}
